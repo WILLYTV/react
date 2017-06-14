@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import AutorBox from './Autor';
 import LivroBox from './Livro';
+import BeaconsBox from './Beacons';
 import Home from './Home';
 import './index.css';
 import {Router,Route,browserHistory,IndexRoute} from 'react-router';
@@ -13,6 +14,7 @@ ReactDOM.render(
           <IndexRoute component={Home}/>
           <Route path="/autor" component={AutorBox}/>
           <Route path="/livro" component={LivroBox}/>
+          <Route path="/beacons" component={BeaconsBox}/>
       </Route>
   </Router>),
   document.getElementById('root')
